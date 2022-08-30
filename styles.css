@@ -34,6 +34,7 @@ li {
 }
 li:hover {
     cursor: pointer;
+    background-color: var(--blue);
 }
 small {
     font-size: 0.75rem;
@@ -65,6 +66,7 @@ small {
     color: white;
     padding: 1rem 3rem;
     border-radius: 5rem;
+    margin: 1rem 0;
 }
 .email #email {
     border: 1px solid var(--gray);
@@ -76,3 +78,15 @@ small {
     color: black;
     font-weight: 700;
 }
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 375px) {
+    .container .dashboard {
+        width: 90%;
+    }
+    .email .btn {
+        padding: 1rem 8rem 1rem 8rem;
+    }
+  }
